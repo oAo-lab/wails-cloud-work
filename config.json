@@ -1,0 +1,23 @@
+{
+  "username": "202127530334",
+  "password": "Lyhqyh99@",
+  "proxy": "http://localhost:7890",
+  "email": {
+    "host": "",
+    "sender": "",
+    "key": ""
+  },
+  "html_url": {
+    "base_url": "https://jy.hniu.cn/login",
+    "token_url": "http://localhost:20000/api/v1/login",
+    "code_url": "http://localhost:20000/api/v1/verify-code"
+  },
+  "open-ai": {
+    "key": "sk-cE4uiHEWgrmOyD1XCe651276FbF840EbB2A956538fE440B6",
+    "url": "https://api.aigcbest.top/v1"
+  },
+  "qq-bot": {
+    "appid": 102078287,
+    "token": "67o6t92E2hGLOlYPAKtLJ79ug0hyUhbq"
+  }
+}

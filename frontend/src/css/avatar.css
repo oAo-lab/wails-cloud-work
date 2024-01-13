@@ -1,0 +1,19 @@
+/* avatar.css */
+
+.login-bk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url(../assets/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-bk {
+    border-radius: 25px;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

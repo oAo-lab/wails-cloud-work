@@ -1,0 +1,14 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "cloud-work-ui",
+  "outputfilename": "cloud-work-ui",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "Fromsko",
+    "email": "99723642+Fromsko@users.noreply.github.com"
+  },
+  "resources": ["frontend/src/assets"]
+}

@@ -1,0 +1,252 @@
+/* ChatWindow.css */
+
+/* 设置聊天窗口的样式，包括位置、大小、边框、圆角、阴影等 */
+.chat-window {
+    bottom: 75%;
+    /* 距离底部75%的位置 */
+    right: 50%;
+    /* 距离右侧50%的位置 */
+    width: 400px;
+    /* 宽度为400像素 */
+    border: 1px solid #ccc;
+    /* 边框为1像素，实线，颜色为#ccc */
+    border-radius: 4px;
+    /* 圆角半径为4像素 */
+    margin: 20px auto;
+    /* 上下边距为20像素，左右居中 */
+    font-family: Arial, sans-serif;
+    /* 字体为Arial或无衬线字体 */
+    position: absolute;
+    /* 绝对定位 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* 盒子阴影效果 */
+}
+
+/* 设置聊天头部的样式，包括布局、背景颜色、圆角 */
+.chat-header {
+    display: flex;
+    /* 使用弹性盒子布局 */
+    align-items: center;
+    /* 垂直居中对齐项目 */
+    padding: 10px;
+    /* 内填充为16像素 */
+    background-color: #f5f5f5;
+    /* 背景颜色 */
+    border-top-left-radius: 4px;
+    /* 左上角圆角 */
+    border-top-right-radius: 4px;
+    /* 右上角圆角 */
+}
+
+
+/* 设置用户名显示样式 */
+.chat-username {
+    margin-left: 10px;
+    /* 左边距为10像素 */
+    font-weight: bold;
+    /* 字体加粗 */
+    font-size: 18px;
+    /* 字体大小为18像素 */
+}
+
+/* 设置在线状态的样式 */
+.chat-status {
+    margin-left: 5px;
+    /* 左边距为5像素 */
+    color: green;
+    /* 文字颜色为绿色 */
+}
+
+/* 设置消息容器的样式，限制高度和启用滚动条 */
+.message-container {
+    max-height: 300px;
+    /* 最大高度为300像素，超过则显示滚动条 */
+    overflow-y: auto;
+    /* 启用垂直滚动条 */
+    flex-direction: column;
+    /* 子项垂直排列 */
+}
+
+/* 设置滚动条的样式 */
+.message-container::-webkit-scrollbar {
+    width: 8px;
+    /* 滚动条宽度为8像素 */
+}
+
+/* 设置滚动条轨道的样式 */
+.message-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* 轨道背景颜色 */
+}
+
+/* 设置滚动条滑块的样式 */
+.message-container::-webkit-scrollbar-thumb {
+    background: #888;
+    /* 滑块颜色 */
+    border-radius: 4px;
+    /* 滑块圆角 */
+}
+
+/* 设置滚动条鼠标悬停时滑块的样式 */
+.message-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* 滑块悬停颜色 */
+}
+
+/* 覆盖原有Ant Design的列表项样式 */
+:where(.css-dev-only-do-not-override-6j9yrn).ant-list .ant-list-item {
+    display: flex;
+    /* 使用弹性盒子布局 */
+    align-items: center;
+    /* 垂直居中对齐 */
+    justify-content: space-between;
+    /* 两端对齐，项目之间的间隔都相等 */
+    padding: 0 0;
+    /* 内填充设为0 */
+    color: rgba(0, 0, 0, 0.88);
+    /* 字体颜色 */
+}
+
+/* 设置用户和代理消息框的公共样式 */
+.user,
+.agent {
+    border-radius: 5px;
+    /* 圆角为5像素 */
+    margin: 5px 15px;
+    /* 边距为上下5像素，左右15像素 */
+    width: fit-content;
+    /* 宽度根据内容调整 */
+    display: inline-block;
+    /* 内联块级布局 */
+}
+
+/* 设置用户消息框的特定样式 */
+.user {
+    background-color: #e2f7fe;
+    /* 背景颜色 */
+    margin-left: auto;
+    /* 自动左边距，使其靠右 */
+}
+
+/* 设置代理消息框的特定样式 */
+.agent {
+    background-color: #d3ffd3;
+    /* 背景颜色 */
+    margin-right: auto;
+    /* 自动右边距，使其靠左 */
+}
+
+/* 设置聊天行框的最小宽度和边距 */
+.chat-line-box-style {
+    min-width: 20px;
+    /* 最小宽度为20像素 */
+    margin: 5px;
+    /* 边距为5像素 */
+    user-select: none; 
+    /* 不允许用户选择 */
+}
+
+/* 设置聊天输入区的样式 */
+.chat-input {
+    display: flex;
+    /* 使用弹性盒子布局 */
+    align-items: center;
+    /* 垂直居中对齐项目 */
+    padding: 16px;
+    /* 内填充为16像素 */
+    border-top: 1px solid #ccc;
+    /* 上边框为1像素实线，颜色为#ccc */
+}
+
+/* 设置Ant Design输入框的样式 */
+.ant-input {
+    flex: 1;
+    /* 占据剩余空间 */
+    margin-right: 16px;
+    /* 右边距为16像素 */
+}
+
+/* 设置Ant Design按钮的宽度 */
+.ant-btn {
+    width: 80px;
+    /* 宽度为80像素 */
+}
+
+/* 设置用户头像的样式 */
+.avatar {
+    width: 64px;
+    /* 宽度为64像素 */
+    height: 64px;
+    /* 高度为64像素 */
+    cursor: pointer;
+    /* 鼠标悬停时为指针形状 */
+    background-image: url(../assets/chatlogo.jpg);
+    /* 背景图片 */
+    background-size: cover;
+    /* 背景图片覆盖整个元素 */
+}
+
+/* 设置代理头像的样式 */
+.avatar-ct {
+    width: 64px;
+    /* 宽度为64像素 */
+    height: 64px;
+    /* 高度为64像素 */
+    cursor: pointer;
+    /* 鼠标悬停时为指针形状 */
+    background-image: url(../assets/ct.jpg);
+    /* 背景图片 */
+    background-size: cover;
+    /* 背景图片覆盖整个元素 */
+}
+
+/* 当输入框非空时按钮的背景颜色 */
+.btn-active {
+    background-image: linear-gradient(to right, rgb(60, 160, 37) 50%, green 50%);
+    background-size: 200% 100%;
+}
+
+/* 设置鼠标悬停时按钮的背景颜色过渡效果 */
+.ant-btn-primary:hover {
+    background-position: left bottom;
+}
+
+/* 右键菜单样式 */
+.context-menu {
+    position: fixed;
+    z-index: 1000;
+    width: 100px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    /* 增加圆角 */
+    box-shadow: 0 2px 5px rgba(80, 74, 74, 0.2);
+    display: none;
+    overflow: hidden;
+    /* 确保子项不超出圆角边界 */
+}
+
+.context-menu.active {
+    display: block;
+}
+
+/* 右键菜单项样式 */
+.context-menu-item {
+    padding: 10px 15px;
+    text-align: center;
+    /* 文字居中 */
+    font-size: smaller;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* 鼠标悬停在菜单项上时的样式 */
+.context-menu-item:hover {
+    background-color: #f5f5f5;
+}
+
+/* 菜单项之间的分割线 */
+.context-menu-item:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+    /* 分割线 */
+}

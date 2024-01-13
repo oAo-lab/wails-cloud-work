@@ -1,0 +1,38 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "5.2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.2.6",
+    "@codemirror/lang-markdown": "^6.2.3",
+    "@uiw/react-codemirror": "^4.21.21",
+    "antd": "^5.12.1",
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "html2canvas": "^1.4.1",
+    "jinrishici": "^1.0.6",
+    "localforage": "^1.10.0",
+    "match-sorter": "^6.3.1",
+    "node-fetch": "^3.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-monaco-editor": "^0.54.0",
+    "react-router-dom": "^6.20.1",
+    "sort-by": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@vitejs/plugin-react": "2.2.0",
+    "eslint": "^8.53.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.4"
+  }
+}

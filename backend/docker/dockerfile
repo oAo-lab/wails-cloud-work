@@ -1,0 +1,19 @@
+FROM python:3.8.5
+
+# 设置清华源
+RUN sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list && \
+    sed -i 's/security.debian.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list
+
+# 设置工作目录
+RUN mkdir -p /app
+WORKDIR /app
+
+# 安装依赖包
+RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --no-cache-dir fastapi[all]  ddddocr loguru Pillow==9.5.0 
+RUN pip install --no-cache-dir --upgrade pip -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+# 暴露 FASTAPI 的默认端口
+EXPOSE 20000
+
+# 设置容器启动时的默认命令
+CMD ["python", "main.py"]
