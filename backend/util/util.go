@@ -6,7 +6,6 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/electricbubble/go-toast"
 	"github.com/panjf2000/ants/v2"
 )
 
@@ -140,11 +139,11 @@ func SetProxy(config *Proxy) {
 }
 
 func Toask(msg H) {
-	_ = toast.Push(
-		msg["data"],
-		toast.WithIcon(msg["logo"]),
-		toast.WithTitle(msg["title"]),
-		toast.WithAppID(msg["app_id"]),
-		toast.WithProtocolAction("🎉 Finished"),
-	)
+	// _ = toast.Push(
+	// 	msg["data"],
+	// 	toast.WithIcon(msg["logo"]),
+	// 	toast.WithTitle(msg["title"]),
+	// 	toast.WithAppID(msg["app_id"]),
+	// 	toast.WithProtocolAction("🎉 Finished"),
+	// )
 }

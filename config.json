@@ -1,0 +1,9 @@
+{
+  "username": "",
+  "password": "",
+  "proxy": "",
+  "email": { "host": "", "sender": "", "key": "" },
+  "html_url": { "base_url": "", "token_url": "", "code_url": "" },
+  "open-ai": { "key": "", "url": "" },
+  "qq-bot": { "appid": 0, "token": "" }
+}
